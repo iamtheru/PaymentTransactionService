@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace PaymentTransactionsServie
 {
-    internal static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        static void Main()
-        {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[]
-            {
-                new PaymentTransactionService()
-            };
-            ServiceBase.Run(ServicesToRun);
-        }
-    }
+	internal static class Program
+	{
+		/// <summary>
+		/// The main entry point for the application.
+		/// </summary>
+		static void Main()
+		{
+			ServiceBase[] ServicesToRun;
+			ServicesToRun = new ServiceBase[]
+			{
+				new PaymentTransactionService()
+			};
+			ServiceBase.Run(ServicesToRun);
+		}
+	}
 }
