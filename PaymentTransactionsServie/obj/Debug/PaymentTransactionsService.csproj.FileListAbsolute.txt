@@ -12,3 +12,5 @@ E:\Repositiory\PaymentTransactionService\PaymentTransactionsServie\obj\Debug\Pay
 E:\Repositiory\PaymentTransactionService\PaymentTransactionsServie\obj\Debug\PaymentTransactionsServie.ProjectInstaller.resources
 E:\Repositiory\PaymentTransactionService\PaymentTransactionsServie\obj\Debug\PaymentTransactionsService.csproj.GenerateResource.cache
 E:\Repositiory\PaymentTransactionService\PaymentTransactionsServie\bin\Debug\NLog.config
+E:\Repositiory\PaymentTransactionService\PaymentTransactionsServie\bin\Debug\Newtonsoft.Json.dll
+E:\Repositiory\PaymentTransactionService\PaymentTransactionsServie\bin\Debug\Newtonsoft.Json.xml
