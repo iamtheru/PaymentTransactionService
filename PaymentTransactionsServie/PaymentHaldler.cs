@@ -13,7 +13,6 @@ namespace PaymentTransactionsServie
 	{
 		private readonly IFileReaderFactory _fileReaderFactory = new FileReaderFactory();
 
-
 		public async Task ProcessFile(string sourcePath, string extension)
 		{
 			var reader = _fileReaderFactory.Create(extension);

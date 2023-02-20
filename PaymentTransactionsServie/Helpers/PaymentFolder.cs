@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 
 
@@ -7,7 +6,6 @@ namespace PaymentTransactionsServie.Helpers
 {
 	internal static class PaymentFolder
 	{
-		
 		private static string _resultFolderName;
 		private static readonly string _partResultName;
 		private static readonly string _resultExtension;
@@ -15,6 +13,7 @@ namespace PaymentTransactionsServie.Helpers
 		private static readonly string _sourcePath;
 		private static readonly string _destinationPath;
 		public static string ResultPath;
+
 		static PaymentFolder()
 		{
 			_partResultName = "output";

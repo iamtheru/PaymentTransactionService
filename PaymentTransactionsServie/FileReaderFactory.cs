@@ -2,7 +2,6 @@
 using PaymentTransactionsServie.Readers;
 using System;
 
-
 namespace PaymentTransactionsServie
 {
 	internal class FileReaderFactory : IFileReaderFactory

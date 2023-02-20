@@ -1,6 +1,5 @@
 ﻿using NLog;
 using PaymentTransactionsServie.Helpers;
-using PaymentTransactionsServie.Models;
 using System;
 using System.IO;
 using System.ServiceProcess;
@@ -14,10 +13,6 @@ namespace PaymentTransactionsServie
 		private readonly Configuration _configuration;
 		private FileSystemWatcher _watcher;
 		private Timer _timer;
-
-		private readonly MetaModel _metaLog;
-
-
 
 		public PaymentTransactionService()
 		{
@@ -48,7 +43,6 @@ namespace PaymentTransactionsServie
 
 		private async void ProcessPayment(object sender, FileSystemEventArgs e)
 		{
-
 			var sourcePath = e.FullPath;
 			var extension = Path.GetExtension(sourcePath);
 
@@ -83,8 +77,6 @@ namespace PaymentTransactionsServie
 			_timer.Interval = timeToNextRun.TotalMilliseconds;
 		}
 
-
-
 		private void SetTimer()
 		{
 			var now = DateTime.Now;
@@ -105,7 +97,5 @@ namespace PaymentTransactionsServie
 			_watcher.EnableRaisingEvents = true;
 			_watcher.Created += new FileSystemEventHandler(ProcessPayment);
 		}
-
-		
 	}
 }
